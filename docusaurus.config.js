@@ -12,7 +12,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "My Documentation",
   // tagline: 'Dinosaurs are cool',
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.svg",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -86,9 +86,11 @@ const config = {
       navbar: {
         title: "My Documentation",
         logo: {
-          alt: "Documentation Site Logo",
+          alt: "My Documentation Logo",
           src: "img/logo.svg",
           srcDark: "img/logo.svg",
+          width: 150,
+          height: 50,
         },
         items: [
           {

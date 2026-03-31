@@ -4,12 +4,16 @@
  */
 
 .heroBanner {
-  padding: 6rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, #0066cc 0%, #0099ff 50%, #00ccff 100%);
   color: white;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .heroBanner::before {
