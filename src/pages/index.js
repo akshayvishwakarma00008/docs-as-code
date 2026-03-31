@@ -15,12 +15,19 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">Your comprehensive knowledge base for tutorials, guides, and best practices</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/tutorial-basics/congratulations">
-            Docusaurus Tutorial - 5min ⏱️
+            style={{backgroundColor: '#00ccff', borderColor: '#00ccff'}}
+            to="/docs-as-code/docs/tutorial-basics/congratulations">
+            Explore Tutorials 📚
+          </Link>
+          <Link
+            className="button button--lg"
+            style={{backgroundColor: 'transparent', borderColor: 'white', color: 'white'}}
+            to="/docs-as-code/docs/deployment/github-pages-deployment-guide">
+            Browse Guides 🔍
           </Link>
         </div>
       </div>
@@ -32,8 +39,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title} - Documentation`}
+      description="Complete documentation covering tutorials, guides, deployment instructions, and best practices across multiple categories">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

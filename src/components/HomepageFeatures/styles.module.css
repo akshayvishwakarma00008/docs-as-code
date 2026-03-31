@@ -1,8 +1,28 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
+  background: linear-gradient(180deg, rgba(0, 102, 204, 0.05) 0%, rgba(0, 204, 255, 0.05) 100%);
+  border-top: 1px solid rgba(0, 102, 204, 0.1);
+  border-bottom: 1px solid rgba(0, 102, 204, 0.1);
+}
+
+.features :global(.col) {
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.features :global(.col):hover {
+  background: rgba(0, 102, 204, 0.08);
+  transform: translateY(-4px);
+}
+
+.features :global(h3) {
+  color: #0066cc;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .featureSvg {
